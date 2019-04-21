@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="danger"> 
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>    
+    <ion-title>Signup Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h6>Name</h6>
+    <ion-input type="text" placeholder="EnterName" id="inbird" #nam></ion-input>
+    <h6>Email</h6>
+    <ion-input type="text" placeholder="Enter Email" id="inbird"#email></ion-input>
+    <h6>Password</h6>
+    <ion-input type="Password" placeholder="Enter Password" id="inbird" #pass></ion-input>
+    <h6>Confirm Password</h6>
+    <ion-input type="Password" placeholder="Confirm Password" id="inbird"></ion-input>
+    <h6>By Signin, You agree to terms & Condition</h6>
+    <ion-button color="danger" expand="full" id="inbird" (click)="submit(nam.value, email.value, pass.value)">Register</ion-button>
+
+</ion-content>

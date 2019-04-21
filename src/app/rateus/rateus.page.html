@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>RateUs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-icon  style="font-size: 45px; color:black" name="star" (click)="selected(1)" [ngStyle]="{'color':a}"></ion-icon>
+    <ion-icon style="font-size: 45px; color:black" name="star" (click)="selected(2)" [ngStyle]="{'color':b}"></ion-icon> 
+    <ion-icon style="font-size: 45px; color:black" name="star" (click)="selected(3)"[ngStyle]="{'color':c}"></ion-icon>         
+    <ion-icon style="font-size: 45px; color:black" name="star" (click)="selected(4)"[ngStyle]="{'color':d}"></ion-icon>         
+    <ion-icon style="font-size: 45px; color:black" name="star" (click)="selected(5)"[ngStyle]="{'color':e}"></ion-icon>
+</ion-content>

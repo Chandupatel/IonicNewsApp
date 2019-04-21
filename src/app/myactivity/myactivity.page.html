@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-icon name="arrow-back" id="micon" routerLink="/home"></ion-icon>
+          <!-- <a href="../home" class="back"><ion-icon name="arrow-back" id="micon"></ion-icon></a> -->
+        </ion-buttons>
+    <ion-title>
+      My Activity
+      <ion-icon style="float:right" name="search"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <button (click)="re()"><h5>Clear Activity</h5></button>
+    <ion-list >
+        <ion-item *ngFor="let x of ak; let j=index"  >
+          <ion-card >
+            <ion-card-header>
+                <a  [routerLink]="" style="float: right;">
+                    <ion-icon name="more" ion-button (click)="presentActionSheet(i,j)"></ion-icon>
+                </a>
+              <img src="{{x.url}}">
+              <ion-card-subtitle><h3>{{x.title}}</h3></ion-card-subtitle>
+              <ion-card-title><h6 style="text-align:justify">{{x.desc}}</h6></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+            </ion-card-content>
+          </ion-card>
+        </ion-item> 
+      </ion-list>
+
+</ion-content>
